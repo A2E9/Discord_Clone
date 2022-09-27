@@ -1,0 +1,102 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: -8px;
+    overflow: hidden;
+}
+
+.main>.container {
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.main>.container .text {
+    width: 384px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main>.container h2 {
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 45px;
+    margin-bottom: 3px;
+    margin-top: -8px;
+}
+
+.main>.container p {
+    font-size: 25px;
+    font-size: clamp(16px, 2vw, 19px);
+    line-height: 1.625;
+}
+
+.main>.container>.first-container {
+    display: flex;
+
+    padding: 120px 70px;
+}
+
+.main>.container>.second-container {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 120px 100%;
+}
+
+.main>.container>.third-container {
+    display: flex;
+
+    padding: 120px 70px;
+}
+
+.main>.container>.third-container>.text {
+    display: flex;
+
+    padding: 120px 70px;
+}
+
+.main>.container>.forth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 120px 100%;
+
+}
+
+.main>.container>.forth-container>.text {
+    text-align: center;
+    width: 980px;
+}
+
+.main>.container>.forth-container>.text>p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main>.container>.forth-container>.lastPic {
+    width: 1180px;
+    padding-bottom: 80px;
+}
+
+.main>.container>.forth-container h4 {
+    margin-top: -20px;
+    z-index: 1;
+    font-weight: 800;
+    font-size: 32px;
+
+}
+
+.main>.container>.forth-container h3 {
+    font-weight: 800;
+    line-height: 95%;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 0;
+}

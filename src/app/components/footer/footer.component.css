@@ -1,0 +1,43 @@
+main {
+    background-color: #23272a;
+    color: rgb(255, 255, 255);
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+}
+
+.lower {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    
+}
+
+.first-container {
+    border-bottom: 1px solid #5865f2;
+    padding: 40px;
+    padding-left: 0;
+}
+
+.footer-nav {
+    display: flex;
+    border-bottom: 1px solid #5865f2;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.nav-item {
+    padding-left: 100px;
+}
+
+.nav-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item li {
+    margin-top: 15px;
+}

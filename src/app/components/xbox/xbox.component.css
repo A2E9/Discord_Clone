@@ -1,0 +1,18 @@
+.xbox-container {
+    background-color: #ffffff;
+    /* padding: 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.xbox-container>.text-center {
+    font-size: 15px;
+    margin: 0;
+    margin-right: 16px;
+}
+
+.xbox-container>img {
+    margin-right: 16px;
+}

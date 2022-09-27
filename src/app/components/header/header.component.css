@@ -1,0 +1,135 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+}
+
+.hero-container>.hero-hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.hero-container>.hero-hero img {
+    width: 650px;
+    height: 379.867px;
+}
+
+.hero-container>.main-hero {
+    display: flex;
+}
+
+.hero-container>.hero-hero>.main-hero>.hero-text {
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.625;
+    color: #ffffff;
+}
+
+.hero-container h1 {
+    font-size: 56px;
+    line-height: 95%;
+}
+
+.hero-container>.main-hero>.hero-hero>.hero-buttons>.open-button {
+    margin-left: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+}
+
+.paragraph {
+    color: #ffffff;
+    padding-left: 40px;
+}
+
+#myVideo {
+    object-fit: cover;
+    position:absolute;
+    width: 120%;
+    height: 165%;
+    top: 0%;
+    left: -10%;
+    z-index: -1;
+        
+}
+
+
+
+
+/* .hero-image-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container > .hero-image-container >.back-image{
+
+
+    
+    
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+    border-width: 10px;
+
+}
+.hero-container > .hero-image-container >.back-image>img{
+
+
+}
+
+
+.hero-container>.hero-image-container>.left-image{
+    position: absolute;
+    left:0vw;
+    bottom:0;
+
+    
+    border-color: rgb(51, 255, 0);
+    border-style: solid;
+    border-width: 10px;
+
+}
+.hero-container>.hero-image-container>.left-image>img{
+    position: relative;
+    border-color: rgb(0, 26, 255);
+    border-style: solid;
+    border-width: 10px;
+
+    
+}
+
+
+
+
+
+
+
+.hero-container>.hero-image-container>.right-image{
+    position: absolute; 
+    right:0vw;
+    bottom:0;
+
+
+    border-color: rgb(51, 255, 0);
+    border-style: solid;
+    border-width: 10px;
+} 
+  <div class="back-image">
+                <img class="pic" src="assets/header_images/back-mid.svg" alt="mid-image">
+            </div>
+            <div class="left-image">
+                 <img src="assets/header_images/back-left.svg" alt="left-image">
+            </div>
+            <div class="right-image">
+                <img src="assets/header_images/back-right.svg" alt="right-image">
+            </div>
+        </div>
+
+
+*/

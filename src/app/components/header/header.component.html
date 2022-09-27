@@ -1,0 +1,40 @@
+<!-- CHILD -->
+
+<header>
+    <div [ngStyle]="heroContainer1" class="hero-container">
+
+        <div [ngStyle]="heroHeroST2" class="hero-hero">
+            <div [ngStyle]="mainHeroST3" class="main-hero">
+
+                <div [ngStyle]="heroTextST4" class="hero-text">
+                    <h1 [ngStyle]="textTitleST5" class="text-title" style="font-weight:1000">{{h1}}</h1>
+                    <p [ngStyle]="textCenterST5" class="text-center">{{text}}</p>
+                </div>
+
+                <div [ngStyle]="heroButtonsST4" class="hero-buttons">
+                    <div class="download-button">
+                        <app-button [buttonST]="button1ST" class="btn btn-primary" text="{{button1Text}}"
+                            [showDownIco]=showDownIco [showBtn]="showDownBtn" [showSaleBtn1]="showSaleBtn1"></app-button>
+                    </div>
+
+                    <div class="open-button">
+                        <app-button *ngIf="!showParagraph"  [buttonST]="button2ST" class="btn btn-primary" text="{{button2Text}}"
+                            [showBtn]="showBrowserBtn">
+                        </app-button>
+
+
+                    </div>
+                    <p [ngStyle]="paragraphST5" *ngIf="showParagraph" class="paragraph">{{paragraphText}}</p>
+                </div>
+
+            </div>
+
+            <img class="img" *ngIf="!imageOvideo" src={{heroImg}} (error)="handleImageError($event)">
+
+            <video *ngIf="imageOvideo" autoplay muted loop id="myVideo">
+                <source src="assets/Nitro/video.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</header>

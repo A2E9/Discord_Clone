@@ -1,0 +1,60 @@
+<app-xbox></app-xbox>
+
+
+
+<app-header [h1]="h1" [text]="text" [showDownBtn]="showDownIco" [showBrowserBtn]="showBrowserBtn" [heroContainer1]="heroContainer1"
+    [mainHeroST3]="mainHeroST3" [heroTextST4]="heroTextST4"></app-header>
+
+<div class="main">
+    <div class="container">
+        <div class="first-container">
+            <img src='assets/main-images/first-main.svg' alt="s">
+            <div style="margin-left: 110px" class="text">
+                <h2>Ein Ort nur für dich und deine Freunde</h2>
+                <p>Discord-Server sind in themenbasierte Kanäle eingeteilt. So kannst du mit anderen arbeiten, Inhalte
+                    teilen
+                    und
+                    über das Tagesgeschehen reden, ohne einen Gruppenchat zuzuspammen.</p>
+            </div>
+
+
+        </div>
+        <div class="second-container">
+
+            <div style="margin-right: 110px" class="text">
+                <h2>Treffen ganz leicht gemacht</h2>
+                <p>Mach es dir in einem Sprachkanal gemütlich, wenn du Zeit hast und Freunde auf deinem Server können
+                    einfach dazukommen, ohne extra anrufen zu müssen.</p>
+            </div>
+            <img src='assets/main-images/second-main.svg' alt="s">
+        </div>
+        <div class="third-container">
+            <img src='assets/main-images/third-main.svg' alt="s">
+            <div style="margin-left: 50px" class="text">
+                <h2>Von klein zu groß</h2>
+                <p>Eine Community kann weder zu klein noch zu groß sein. Mit Tools zur Moderation und
+                    benutzerdefiniertem Zugang gibst du Mitgliedern besondere Rechte, erstellst private Kanäle und mehr.
+                </p>
+            </div>
+        </div>
+        <div class="forth-container">
+
+            <div class="text">
+                <h3>Zuverlässige Technik für persönliche Nähe</h3>
+                <p>Sprach- und Bildübertragung mit geringer Latenz gibt dir das Gefühl, mit deinen Leuten im selben Raum
+                    zu sitzen. Winke im Video zur Begrüßung, schau Freunden zu, wenn sie Spiele streamen oder übertrage
+                    deinen Bildschirm für eine gemeinsame Malsession mit den anderen.</p>
+            </div>
+            <img class="lastPic" src='assets/main-images/forth-main.svg' alt="s">
+            <img src='assets/main-images/forth-stars.svg' alt="s">
+            <h4>Bereit, loszulegen?</h4>
+            <app-button class="btn btn-primary" text="Download für Windows" backColor="#5865f2" color="white"
+                [showDownIco]=true padding="16px 32px"></app-button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<app-footer></app-footer>

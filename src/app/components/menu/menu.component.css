@@ -1,0 +1,41 @@
+.hero-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    z-index: 999;
+}
+
+.hero-menu>.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+    padding-left: 126px;
+}
+
+.hero-menu>.nav-container li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hero-menu a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+    line-height: 140%;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.hero-menu a:hover {
+    text-decoration: underline;
+}
+
+.hero-menu>.login-button {
+    display: flex;
+}
