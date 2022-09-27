@@ -1,46 +1,91 @@
-<app-header [h1]="h1" [text]="text" [showDownBtn]="showDownIco" [showBrowserBtn]="showBrowserBtn" [heroContainer1]="heroContainer1"
-    [mainHeroST3]="mainHeroST3" [heroTextST4]="heroTextST4" [button1ST]="button1ST" [heroImg]="heroImg" [paragraphText]="paragraphText" [showParagraph]="showParagraph"
-    [textCenterST5]="textCenterST5" [button1Text]="button1Text"[showDownIco]="true"></app-header>
+<app-header
+  [h1]="h1"
+  [text]="text"
+  [showDownBtn]="showDownIco"
+  [showBrowserBtn]="showBrowserBtn"
+  [heroContainer1]="heroContainer1"
+  [mainHeroST3]="mainHeroST3"
+  [heroTextST4]="heroTextST4"
+  [button1ST]="button1ST"
+  [heroImg]="heroImg"
+  [paragraphText]="paragraphText"
+  [showParagraph]="showParagraph"
+  [textCenterST5]="textCenterST5"
+  [button1Text]="button1Text"
+  [showDownIco]="true"
+></app-header>
 
 <main>
-    <section class="container">
+  <section class="container">
+    <div class="first-column">
+      <div class="box-one box">
+        <h2 class="text-title">IOS</h2>
+        <app-button
+          class="btn"
+          text="Herunterladen"
+          [showDownIco]="false"
+          [showBtn]="true"
+          [buttonST]="button2ST"
+        >
+        </app-button>
+        <img src="/assets/pages/Download/IOS.svg" alt="section-1-image" />
+      </div>
+      <div class="box-two box">
+        <h2 class="text-title">Linux</h2>
+        <app-button
+          class="btn"
+          text="Herunterladen  󠀠󠀠 󠀠"
+          [showDown2Ico]="true"
+          [showDownIco]="false"
+          [showBtn]="true"
+          [buttonST]="button2ST"
+        >
+        </app-button>
+        <img src="/assets/pages/Download/LINUX.svg" alt="section-1-image" />
+      </div>
+      <div class="box-three box-test">
+        <h2>Du bist experimentierfreudig?</h2>
+        <p class="test-text">
+          Hol dir unsere öffentliche Testversion und probiere neue Funktionen
+          aus, noch bevor sie an den Start gehen.
+        </p>
+        <app-button
+          class="btn-test"
+          text="Lade die öffentliche Testversion herunter  󠀠󠀠 󠀠󠀠"
+          [showDown2Ico]="true"
+          [showDownIco]="false"
+          [showBtn]="true"
+          [buttonST]="button2ST"
+        >
+        </app-button>
+      </div>
+    </div>
 
-        <div class="first-column">
-            <div class="box-one box">
-                <h2 class="text-title">IOS</h2>
-                <app-button class="btn" text="Herunterladen" [showDownIco]="false" [showBtn]="true" [buttonST]="button2ST">
-                </app-button>
-                <img src="/assets/Download/IOS.svg" alt="section-1-image">
-            </div>
-            <div class="box-two box">
-                <h2 class="text-title">Linux</h2>
-                <app-button class="btn" text="Herunterladen 󠀠󠀠 ᐯ" [showDownIco]="false" [showBtn]="true" [buttonST]="button2ST">
-                </app-button>
-                <img src="/assets/Download/LINUX.svg" alt="section-1-image">
-            </div>
-            <div class="box-three box-test">
-                <h2>Du bist experimentierfreudig?</h2>
-                <p class="test-text">Hol dir unsere öffentliche Testversion und probiere neue Funktionen aus, noch bevor sie an den Start gehen.</p>
-                <app-button class="btn-test" text="Lade die öffentliche Testversion herunter 󠀠󠀠 ᐯ" [showDownIco]="false" [showBtn]="true" [buttonST]="button2ST">
-                </app-button>
-            </div>
-        </div>
-
-
-        <div class="second-column">
-            <div class="box-one box">
-                <h2 class="text-title">Android</h2>
-                <app-button class="btn" text="Herunterladen" [showDownIco]="false" [showBtn]="true" [buttonST]="button2ST">
-                </app-button>
-                <img src="/assets/Download/ANDROID.svg" alt="section-1-image">
-            </div>
-            <div class="box-two box">
-                <h2 class="text-title">MacOS</h2>
-                <app-button class="btn" text="Herunterladen" [showDownIco]="false" [showBtn]="true" [buttonST]="button2ST">
-                </app-button>
-                <img src="/assets/Download/MAC.svg" alt="section-1-image">
-            </div>
-        </div>
-
-    </section>
+    <div class="second-column">
+      <div class="box-one box">
+        <h2 class="text-title">Android</h2>
+        <app-button
+          class="btn"
+          text="Herunterladen"
+          [showDownIco]="false"
+          [showBtn]="true"
+          [buttonST]="button2ST"
+        >
+        </app-button>
+        <img src="/assets/pages/Download/ANDROID.svg" alt="section-1-image" />
+      </div>
+      <div class="box-two box">
+        <h2 class="text-title">MacOS</h2>
+        <app-button
+          class="btn"
+          text="Herunterladen"
+          [showDownIco]="false"
+          [showBtn]="true"
+          [buttonST]="button2ST"
+        >
+        </app-button>
+        <img src="/assets/pages/Download/MAC.svg" alt="section-1-image" />
+      </div>
+    </div>
+  </section>
 </main>

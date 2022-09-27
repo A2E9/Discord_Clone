@@ -1,24 +1,50 @@
 <div class="hero-menu">
-    <!-- <div class="logo-image"> -->
-    <!-- <a class="discord-link" href="https://discord.com/"> -->
-    <img src="assets/header_images/logo-small.svg" alt="mid-image">
-    <!-- </a> -->
-    <!-- </div> -->
+  <!-- <div class="logo-image"> -->
+  <!-- <a class="discord-link" href="https://discord.com/"> -->
+  <img
+    [routerLink]="['/']"
+    id="ds"
+    src="assets/header-img/logo-small.svg"
+    alt="mid-image"
+  />
+  <!-- </a> -->
+  <!-- </div> -->
 
-    <ul class="nav-container">
-        <!-- Herunterladen Nitro Entdecken Sicherheit Support Blog Jobs -->
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Herunterladen</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Nitro</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Entdecken</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Sicherheit</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Support</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.w3schools.com/">Jobs</a></li>
-    </ul>
+  <ul class="nav-container">
+    <!-- Herunterladen Nitro Entdecken Sicherheit Support Blog Jobs -->
+    <li [routerLinkActive]="'active'" class="animate-charcter">
+      <a class="nav-link" [routerLink]="'download'">Herunterladen</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'nitro'">Nitro</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'discover'">Entdecken</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'home'">Home</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'error'">Error</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'**'">Blog</a>
+    </li>
+    <li [routerLinkActive]="'active'" class="nav-item">
+      <a class="nav-link" [routerLink]="'***'">Jobs</a>
+    </li>
+  </ul>
 
-    <div class="login-button">
-        <app-button class="btn btn-primary" text="{{login.text}}" backColor="{{login.backColor}}"
-            color="{{login.color}}" font="{{login.font}}" padding="{{login.padding}}" [showBtn]="true">
-        </app-button>
-    </div>
+  <div class="login-button">
+    <app-button
+      class="btn btn-primary"
+      text="{{ login.text }}"
+      backColor="{{ login.backColor }}"
+      color="{{ login.color }}"
+      font="{{ login.font }}"
+      padding="{{ login.padding }}"
+      [showBtn]="true"
+    >
+    </app-button>
+  </div>
 </div>

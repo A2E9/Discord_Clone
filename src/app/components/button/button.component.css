@@ -1,25 +1,23 @@
 .btn {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 40px;
-    font-size: 13px;
-    padding: 7px 16px;
-    line-height: 24px;
-    cursor: pointer;
-    display: flex;
+  border: none;
+  border-radius: 40px;
+  font-size: 13px;
+  padding: 7px 16px;
+  line-height: 24px;
+  cursor: pointer;
+  display: flex;
 }
-
 
 .btn:hover {
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
-    color: #5865f5;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  color: #5865f5;
 }
-.sale{
-    margin-bottom: -2px;
-margin-left: 18px;
-padding-right: 9px;
-padding-left: 9px;
-border-radius: 20px;
-background-color: #5865f2;
-font-size: 13px;
+.sale {
+  margin-bottom: -2px;
+  margin-left: 18px;
+  padding-right: 9px;
+  padding-left: 9px;
+  border-radius: 20px;
+  background-color: #5865f2;
+  font-size: 13px;
 }

@@ -3,10 +3,9 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-
   //HEADER-PARAMS
   @Input() h1!: string;
   @Input() text!: string;
@@ -38,12 +37,14 @@ export class HeaderComponent implements OnInit {
   @Input() showSaleBtn1: boolean = false;
   @Input() textTitleST5!: any;
   @Input() paragraphST5!: any;
+  @Input() downIcoST!: any;
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   shouldHide!: boolean;
-  handleImageError(e: any) { e.target.style.display = 'none'; this.shouldHide = true; }
+  handleImageError(e: any) {
+    e.target.style.display = 'none';
+    this.shouldHide = true;
+  }
 }

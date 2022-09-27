@@ -13,17 +13,17 @@ import { NitroComponent } from './components/pages/nitro/nitro.component';
 import { DiscoverComponent } from './components/pages/discover/discover.component';
 import { XboxComponent } from './components/xbox/xbox.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './components/pages/error/error.component';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'download', component: DownloadComponent },
   { path: 'nitro', component: NitroComponent },
   { path: 'discover', component: DiscoverComponent },
-
+  // { path: '', redirectTo: "home", pathMatch: "full" },
+  { path: '', component: HomeComponent },
+  { path: '**', component: ErrorComponent },
 ];
-
-
-
 
 // Language: typescript
 // Path: src\app\app-routing.module.ts
@@ -40,13 +40,11 @@ const appRoutes: Routes = [
     DownloadComponent,
     NitroComponent,
     DiscoverComponent,
-    XboxComponent
+    XboxComponent,
+    ErrorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule, RouterModule.forRoot(appRoutes)
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

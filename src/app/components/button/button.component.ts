@@ -1,31 +1,29 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent implements OnInit {
-  @Input() text!: string 
-  @Input() backColor!: string 
+  @Input() text!: string;
+  @Input() backColor!: string;
   @Input() color!: string;
   @Input() font!: string;
   @Input() showDownIco: boolean = false;
   @Input() padding!: string;
   @Input() fontWeight!: string;
   @Input() showBtn: boolean = false;
-  @Input() showSaleBtn1: boolean= false;
+  @Input() showSaleBtn1: boolean = false;
   @Input() buttonST!: any;
+  @Input() downIcoST: any = 'black';
+  @Input() showDown2Ico: boolean = false;
 
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-
+  onClick() {
+    console.log('WORKS');
   }
-
-  onClick(){
-    console.log("WORKS");
-  }
-
 }

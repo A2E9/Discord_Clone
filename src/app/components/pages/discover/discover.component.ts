@@ -27,17 +27,37 @@ export class DiscoverComponent implements OnInit {
     padding: '10px 0',
   };
 
+  boolCheck: boolean = true;
 
   constructor() {}
 
   ngOnInit(): void {}
 
+  button1Text = 'Make Your Community Public';
+  button2Text = 'Join Discord';
+
+  button1ST = {
+    'justify-content': 'center',
+    "padding": '19px 120px',
+    'font-size': '24px',
+    'background-color': '#24252e',
+    "color": '#fffffe',
+    'text-align': 'center',
+    'text-decoration': 'none',
+    'line-height': '25px',
+    "transition": '0.2s',
+    'transition-timing-function': 'ease-in-out',
+  };
 
   bntStyle: string = 'btn-default';
   check: boolean = false;
   submit() {
     this.check = !this.check;
-    
+
     this.bntStyle = this.check ? 'btn-change' : 'btn-default';
+  }
+
+  boolC() {
+    this.boolCheck = !this.boolCheck;
   }
 }

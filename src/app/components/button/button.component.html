@@ -1,18 +1,44 @@
-<button class="btn" (click)="onClick()" *ngIf=showBtn [ngStyle]="buttonST" >
-    <!-- <img src="assets/header_images/download-small.svg" alt="mid-image" *ngIf=showDownIco style="margin-bottom:-4px; color: white"> -->
+<button class="btn" (click)="onClick()" *ngIf="showBtn" [ngStyle]="buttonST">
+  <!-- <img src="assets/header-img/download-small.svg" alt="mid-image" *ngIf=showDownIco style="margin-bottom:-4px; color: white"> -->
 
-    <svg *ngIf=showDownIco width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:-5px; color: white;">
-        <g fill="currentColor" stroke="currentColor">
-            <path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
-            <path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
-        </g>
-    </svg>
+  <svg
+    *ngIf="showDownIco"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    style=" margin-right:10px; color: {{ downIcoST }}"
+  >
+    <g fill="currentColor" stroke="currentColor">
+      <path
+        d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
+      ></path>
+      <path
+        d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
+      ></path>
+    </g>
+  </svg>
 
-    
+  {{ text }}
 
-    {{text}}
+  <svg
+    *ngIf="showDown2Ico"
+    width="24"
+    height="24"
+    viewBox="0 0 32 32"
+    fill="none"
+    class="dropdownArrow-1My_3f"
+    style="transform: rotate(90deg); margin-top: 2px; margin-left: 5px"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M22.2398 17.0778L11.8576 27.5689C11.2532 28.1437 10.3287 28.1437 9.75984 27.5689C9.19095 26.994 9.19095 26.0599 9.75984 25.4491L19.1109 16L9.75984 6.5509C9.19095 5.97605 9.19095 5.00599 9.75984 4.43114C10.3287 3.85629 11.2532 3.85629 11.8576 4.43114L22.2398 14.9581C22.8087 15.5329 22.8087 16.4671 22.2398 17.0778Z"
+      fill="currentColor"
+    ></path>
+  </svg>
 
-    <div *ngIf="showSaleBtn1" class="sale">
-        <div class="button-small">16 % Rabatt</div>
-    </div>
+  <div *ngIf="showSaleBtn1" class="sale">
+    <div class="button-small">16 % Rabatt</div>
+  </div>
 </button>

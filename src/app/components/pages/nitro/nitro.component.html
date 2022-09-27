@@ -1,90 +1,130 @@
-<app-header [h1]="h1" [text]="text" [showDownBtn]="true" [showBrowserBtn]="showBrowserBtn" [heroContainer1]="heroContainer1"
-    [mainHeroST3]="mainHeroST3" [heroTextST4]="heroTextST4" [button1ST]="button1ST" [button2Text]="button2Text"
-    [button2ST]="button2ST" [textCenterST5]="textCenterST5" [heroHeroST2]="heroHeroST2" [heroButtonsST4]="heroButtonsST4"
-    [button1Text]="button1Text" [imageOvideo]="true" [showSaleBtn1]="showSaleBtn1"></app-header>
-
+<app-header
+  [h1]="h1"
+  [text]="text"
+  [showDownBtn]="true"
+  [showBrowserBtn]="showBrowserBtn"
+  [heroContainer1]="heroContainer1"
+  [mainHeroST3]="mainHeroST3"
+  [heroTextST4]="heroTextST4"
+  [button1ST]="button1ST"
+  [button2Text]="button2Text"
+  [button2ST]="button2ST"
+  [textCenterST5]="textCenterST5"
+  [heroHeroST2]="heroHeroST2"
+  [heroButtonsST4]="heroButtonsST4"
+  [button1Text]="button1Text"
+  [imageOvideo]="true"
+  [showSaleBtn1]="showSaleBtn1"
+></app-header>
 
 <main>
+  <p class="upperP">
+    Discord Nitro hebt deinen Discord-Sprach-, <br />
+    -Video- und -Textchat auf ein neues Level.
+  </p>
+  <h2>Sieh dir all die Vorteile an, die du erhältst:</h2>
 
-    <h2>Sieh dir all die Vorteile an, die du erhältst:</h2>
-
-    <div class="container-box">
-
-        <div class="column_one">
-            <div class="box box1">
-                <div class="box-text">
-                    <h3>Besseres Emoji</h3>
-                    <p>Erstelle und sammle deine <br> eigenen personalisierten und<br> animierten Emojis.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/emoji.svg" alt="rocket">
-                </div>
-            </div>
-            <div class="box box2">
-                <div class="box-text">
-                    <h3>Persönliches Profil</h3>
-                    <p>Verwende einen animierten <br>Avatar und hol dir einen<br> personalisierten Tag.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/profil.svg" alt="rocket">
-                </div>
-            </div>
-            <div class="box box3">
-                <div class="box-text">
-                    <h3>Server unterstützen</h3>
-                    <p>Hol dir 2 Server-Boosts und 30 %<br> Rabatt auf zusätzliche Boosts.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/server.svg" alt="rocket">
-                </div>
-            </div>
+  <div class="container-box">
+    <div class="column-one">
+      <div class="box box1">
+        <div class="box-text">
+          <h3>Besseres Emoji</h3>
+          <p>
+            Erstelle und sammle deine <br />
+            eigenen personalisierten und<br />
+            animierten Emojis.
+          </p>
         </div>
-
-        <div class="column_two">
-            <div class="box box4">
-                <div class="box-text">
-                    <h3>Zeig deine Unterstützung</h3>
-                    <p>Das Profilabzeichen zeigt, wie <br> lange du Discord schon<br> unterstützt.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/support.svg" alt="rocket">
-                </div>
-            </div>
-            <div class="box box5">
-                <div class="box-text">
-                    <h3>Größere Uploads</h3>
-                    <p>100 MB Upload-Größe, um <br> Dateien in bester Qualität zu <br> teilen.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/uploads.png" alt="rocket">
-                </div>
-            </div>
-            <div class="box box6">
-                <div class="box-text">
-                    <h3>HD Video</h3>
-                    <p>Hochauflösende Videos, <br> Bildschirmübertragung und Go <br> Live-Streaming.</p>
-                </div>
-                <div class="box-icon">
-                    <img src="assets/Nitro/videoHD.png" alt="rocket">
-                </div>
-            </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/emoji.svg" alt="rocket" />
         </div>
-
-        <div class="column_lower">
-
-            <p class="upperP">Discord Nitro hebt deinen Discord-Sprach-, <br> -Video- und -Textchat auf ein neues Level.
-            </p>
-
-            <p class="underP">Doitdoitdoitdoitdoit</p>
-            <div class="buttons">
-                <app-button [buttonST]="button1ST" class="btn btn-primary" text="{{button1Text}}"
-                    [showSaleBtn1]="showSaleBtn1"></app-button>
-
-                <app-button [buttonST]="button2ST" class="btn2 btn-primary" text="{{button2Text}}"></app-button>
-
-            </div>
-
+      </div>
+      <div class="box box2">
+        <div class="box-text">
+          <h3>Persönliches Profil</h3>
+          <p>
+            Verwende einen animierten <br />Avatar und hol dir einen<br />
+            personalisierten Tag.
+          </p>
         </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/profil.svg" alt="rocket" />
+        </div>
+      </div>
+      <div class="box box3">
+        <div class="box-text">
+          <h3>Server unterstützen</h3>
+          <p>
+            Hol dir 2 Server-Boosts und 30 %<br />
+            Rabatt auf zusätzliche Boosts.
+          </p>
+        </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/server.svg" alt="rocket" />
+        </div>
+      </div>
     </div>
 
+    <div class="column-two">
+      <div class="box box4">
+        <div class="box-text">
+          <h3>Zeig deine Unterstützung</h3>
+          <p>
+            Das Profilabzeichen zeigt, wie <br />
+            lange du Discord schon<br />
+            unterstützt.
+          </p>
+        </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/support.svg" alt="rocket" />
+        </div>
+      </div>
+      <div class="box box5">
+        <div class="box-text">
+          <h3>Größere Uploads</h3>
+          <p>
+            100 MB Upload-Größe, um <br />
+            Dateien in bester Qualität zu <br />
+            teilen.
+          </p>
+        </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/uploads.png" alt="rocket" />
+        </div>
+      </div>
+      <div class="box box6">
+        <div class="box-text">
+          <h3>HD Video</h3>
+          <p>
+            Hochauflösende Videos, <br />
+            Bildschirmübertragung und Go <br />
+            Live-Streaming.
+          </p>
+        </div>
+        <div class="box-icon">
+          <img src="assets/pages/Nitro/videoHD.png" alt="rocket" />
+        </div>
+      </div>
+    </div>
+
+    <div class="column-lower">
+      <p class="underP">Doitdoitdoitdoitdoit</p>
+      <div class="buttons">
+        <app-button
+          [buttonST]="button1ST"
+          class="btn btn-primary"
+          text="{{ button1Text }}"
+          [showSaleBtn1]="showSaleBtn1"
+          [showBtn]="true"
+        ></app-button>
+
+        <app-button
+          [buttonST]="button2ST"
+          class="btn2 btn-primary"
+          text="{{ button2Text }}"
+          [showBtn]="true"
+        ></app-button>
+      </div>
+    </div>
+  </div>
 </main>

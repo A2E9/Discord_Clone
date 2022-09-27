@@ -1,10 +1,11 @@
 .box {
-  width: 1200px;
+  width: 1100px;
   margin: auto;
 }
 .underSeach {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .inputExplore {
@@ -12,14 +13,13 @@
   justify-content: center;
   margin-top: 50px;
   width: 100%;
-  flex: 1;
 }
 input::placeholder {
   color: #aaaeb3;
 }
 #explore {
   width: 100%;
-  height: 40px;
+  height: 50px;
   border: none;
   border-radius: 10px !important;
   background-color: #e3e5e8;
@@ -34,48 +34,117 @@ input::placeholder {
   margin-left: 15px;
 }
 
-
-
 .nav-bar {
-  margin-top: 40px;
+  width: 300px;
 }
-ul{
+
+ul {
   list-style-type: none;
 }
-li{
-  background-color: #5865f2;
-  padding:5px;
-  border: yellowgreen solid;
+li {
+  background-color: white;
+  margin: 15px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
 }
-li:hover{
-  background-color: aqua;
+.nav-item:hover {
+  background-color: #dfe2e4;
   cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin: 15px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
 }
 
 .item-found {
   display: flex;
+  margin: 20px 15px;
 }
 
 .info-com {
   color: #7d8186;
 }
 
-.item-found__text > * {
+.item-found-text > * {
   padding: 10px;
   padding-left: 20px;
   padding-top: 0;
   justify-content: space-around;
 }
 
-
-.btn-change{
-  background-color: crimson;
+.center {
+  text-align: center;
 }
 
-.btn-default{
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.pagination a.active {
   background-color: #5865f2;
+  color: white;
+  border-radius: 100%;
 }
 
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+  border-radius: 100%;
+}
 
+.box-two {
+  margin-top: 200px;
+  height: 300px;
+  background-color: #5865f2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-two > * {
+  font-size: 40px;
+}
 
+.box-two > h2 {
+  padding-bottom: 30px;
+}
 
+.box-three {
+  margin: 80px 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 25px;
+}
+.text > * {
+  padding-bottom: 30px;
+}
